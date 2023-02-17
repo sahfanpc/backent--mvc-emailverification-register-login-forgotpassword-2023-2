@@ -29,9 +29,18 @@ const userschema = mongoose.Schema({
         type: String,
         required: true
     },
-    conformpassword: {
+    // conformpassword: {
+    //     type: String,
+    //     required: true
+    // },
+    token: {
         type: String,
-        required: true
+        default: ''
+    },
+    verified: {
+        type: Boolean,
+        required: true,
+        default: false
     }
 
 }, { timestamps: true }
